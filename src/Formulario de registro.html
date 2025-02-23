@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <fieldset >
+        <legend>Informacion personal:</legend> 
+<br>
+    <div>
+       <label for="name-label" name="name">Nombre:<input type="text" id="name-label" placeholder="Nombre" required></label>
+    </div>
+       
+<br>
+    <div>
+        <label for="apellido" name="apellido">Apellido:<input type="text "id="apellido" placeholder="Apellido" required></label>
+    </div>
+<br>
+    <div>Genre:
+        <select>
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Trans genre</option>
+            </select>
+    </div>
+
+</fieldset>
+    <!--Informacion con caracter personal-->
+    <fieldset>
+        <legend>Informacion de Contacto:</legend>
+    <br>
+        <div><label for="email">Email:<input type="text" id="email" required></label>
+
+        </div>
+    <br>
+
+        <div>
+            <label for="telefono">Nr tlf:<input type="number" minlength="9" required ></label>
+        </div>
+    <br>
+        <div>
+           <label for="adress">Adress:<textarea id="adress" rows="3"></textarea></label>
+        </div>
+
+    </fieldset>
+
+    <!--Informacion super importante, no olvidar-->
+    <fieldset>
+        <legend>Informacion de Cuenta:</legend>
+<br>
+        <div>
+            <label for="usuario">Nombre de usuario:<textarea required rows="1"></textarea> </label>
+        </div>
+<br>
+        <div>
+            <label for="contraseña">Contraseña usuario:<input  required type="password" maxlength="9" minlength="6"></label>
+        </div>
+<br>
+        <div>
+            <label for="contraseña">Confirm contraseña:<input  required type="password" maxlength="9" minlength="6" placeholder="confirmacion de contraseña"></label>
+        </div>
+    </fieldset>
+   
+    <!--Informacion adicional / optional-->
+    <fieldset>
+        <legend>Preferencias</legend>
+<br>
+        <label for="color">Selecionar un color favorito</label>
+        <select>
+            <option value="rojo">Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="amarillo">Amarillo</option>
+        </select>
+    <br>
+
+        <label for="terminos">Acceptar terminos y condiciones:</label>
+         <input type="checkbox"  name="terminos" id="terminos">Si
+         <input type="checkbox"  name="terminos" id="terminos">No
+            
+    </fieldset>
+
+    <footer>
+        <a href="D:\Workspace\TutorialVSCode\tutorial-vscode\tutorial-vscode\src\doc.html"><input type="submit" ></a>
+    </footer>
+</body>
+
+</html>
